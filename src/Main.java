@@ -52,8 +52,8 @@ public class main {
 
         m1.getMovies();
 
-        ArrayList<Category> true_status=new ArrayList<>();
-        ArrayList<Category> false_status=new ArrayList<>();
+        ArrayList<Seat> true_status=new ArrayList<>();
+        ArrayList<Seat> false_status=new ArrayList<>();
         Seat s1=new Seat(146,true);
         Seat s2=new Seat(246,false);
         Seat s3=new Seat(183,true);
@@ -65,9 +65,6 @@ public class main {
         false_status.add(s2);
         false_status.add(s4);
 
-Seat ss1= new Seat(222,true)
-        Ticket t1= new Ticket(976,245,s1,"Ayden R.");
-        t1.Get_tickets(Seat);
 
         ArrayList<User> male=new ArrayList<>();
         ArrayList<User> female=new ArrayList<>();
@@ -82,6 +79,11 @@ Seat ss1= new Seat(222,true)
         female.add(u2);
         female.add(u3);
 
+        Seat ss1= new Seat(222,true);
+        Ticket t1= new Ticket(976,245,true_status,u1);
+        t1.Get_tickets(true_status);
+
     }
 
 }
+
